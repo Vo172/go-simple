@@ -1,0 +1,13 @@
+version: "1"
+packages:
+    - name: "db"
+      path: "./db/sqlc"
+      queries: "./db/query"
+      schema: "./db/migration"
+      engine: "postgresql"
+      emit_json_tags: true # Them the json vao cac cau truc duoc tao
+      emit_prepared_queries: false # yeu cau sqlc tao code voi cau lenh da chuan bi
+      emit_interface: false
+      emit_exact_table_names: false
+
+
